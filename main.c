@@ -117,7 +117,7 @@ config(char *filename) {
 
 //Komandozeile
 opt(int argc, char **argv) {
-	char c;
+	signed char c;
 	int option_index = 0;
 	struct option long_options[] =
 	{
@@ -134,7 +134,8 @@ opt(int argc, char **argv) {
 	//	{"q",       no_argument,        &q, 1},
 		{0, 0, 0, 0}
 	};
-	while ((c = getopt_long (argc, argv, "hli:c:d:r:f:k:t::",long_options,&option_index)) != -1)
+
+	while ((c = getopt_long (argc, argv, "hli:c:d:r:f:k:t::",long_options,&option_index)) != -1){
     	switch (c) {
 			case 'h':
 				printf("k8047 [options] [data]\
@@ -178,6 +179,7 @@ opt(int argc, char **argv) {
 				}
 				titel_b=1;
 				break;
+		}
 	}
 }	
 
