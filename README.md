@@ -19,5 +19,5 @@ Copyright and license
 
 k8047 is distributed under the terms of the 
 GNU Lesser General Public Licence version 3 (LGPL) version 3,
-available in the file lgpl-3.0.txt.
+available in the file LICENSE.
 
